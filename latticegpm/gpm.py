@@ -75,7 +75,7 @@ class LatticeGenotypePhenotypeMap(GenotypePhenotypeMap):
         **kwargs):
 
         # Get list of genotypes
-        genotypes = mutations_to_genotypes(wildtype, mutations)
+        genotypes = mutations_to_genotypes(mutations, wildtype)
 
         # Calculate lattice proteins.
         self.latticeproteins = LatticeProteins(
